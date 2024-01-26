@@ -1,0 +1,9 @@
+{
+  "name": "recommendation-engine",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "install": "pip3 install -r requirements.txt",
+    "dev": "python3 ./src/app.py"
+  }
+}

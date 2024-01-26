@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mvn clean install -DskipTests",
+    "start": "java -jar target/api-0.0.1-SNAPSHOT.jar"
+  }
+}
