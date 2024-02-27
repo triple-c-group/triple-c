@@ -6,7 +6,6 @@ import App_news from "../component/App_news";
 import Search_button from "~/component/Search_button";
 import Search_buttonPop from "~/component/Search_buttonPop";
 import { useState, useEffect } from "react";
-import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -19,8 +18,6 @@ export default function Index() {
   const [topbarScroll, setTopbarScroll] = useState(false);
   const [searchButton, setSearchButton] = useState(false);
   const [thaiLan, setThaiLan] = useState(false)
-
-  const deactivateSearch = () => setSearchButton(false);
 
   useEffect(function mount() {
       function changeBackground() {

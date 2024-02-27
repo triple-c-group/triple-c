@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 
 export default function App_news({thaiLan}:{thaiLan: boolean}) {
 
-    const [showScrollProRight, setShowScrollProRight] = useState(false);
     const [showScrollProLeft, setShowScrollProLeft] = useState(false);
 
     const handleShowScrollProLeft = () => {
@@ -48,9 +47,9 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
 
     let TBSLP = null;
     if (showScrollProLeft) {
-        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-28 ml-auto -mr-24 w-14 h-14 font-bold bg-teal-600 rounded-full sm:text-4xl text-gray-200 shadow-2xl hover:scale-150 border-2"
+        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2"
     } else {
-        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-28 ml-auto -mr-24 w-14 h-14 font-bold bg-teal-600 rounded-full sm:text-4xl text-gray-200 shadow-2xl hover:scale-150 border-2"
+        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2"
     }
 
 
@@ -63,7 +62,7 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
 
     let LetsCompareCard = null;
     if (thaiLan) {
-        LetsCompareCard = 'เปรียบเทียบบัตรเครดิต  ➜';
+        LetsCompareCard = 'เปรียบเทียบบัตร  ➜';
     } else {
         LetsCompareCard = "Let's Compare Card  ➜";
     }
@@ -114,14 +113,14 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
         <div className='flex flex-col mt-4'>
                 <div className="flex justify-center w-full mt-8">
                     <div className='flex flex-row w-10/12'>
-                        <img className='mr-8 object-cover h-96 w-6/12' src="/img_src/Creditcards_test.png" />
+                        <img className='-ml-2 mr-2 md:mr-4 xl:mr-8 object-cover h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/Creditcards_test.png" />
                         <div className='flex flex-col'> 
-                            <strong className='ml-8'>
+                            <strong className='ml-2 md:ml-4 xl:ml-8 text-xss sm:text-xs  md:text-sm xl:text-xl'>
                                 {CompareCradPara}
                             </strong>
                             <div className='flex justify-center'>
                                 <Link to="https://www.citibank.co.th/en/credit-cards/compare/"
-                                    className="mt-24 ml-8 text-center text-12 font-sans tracking-tight text-green-200 sm:text-xl bg-cyan-700 hover:bg-sky-800 w-62 h-16 rounded-full px-8 py-4"
+                                    className="mt-6 md:mt-12 xl:mt-24 ml-2 md:ml-4 xl:l-8 text-center text-xs font-sans tracking-tight text-green-200 sm:text-lg lg:text-xl bg-cyan-700 hover:bg-sky-800 transition ease-out duration-500 w-40 h-10 sm:w-60 sm:h-12 lg:w-72 lg:h-16 rounded-full px-2 lg:px-8 py-2 sm:py-3 lg:py-4"
                                 >
                                     {LetsCompareCard}
                                 </Link>
@@ -129,24 +128,24 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                         </div>   
                     </div>
                 </div>
-                <div className="flex justify-center w-full mt-8 bg-gray-300 py-8">
+                <div className="flex justify-center w-full mt-2 sm:mt-4 xl:mt-8 bg-gray-300 py-8">
                     <div className='flex flex-row w-10/12'>
                         <div className='flex flex-col'>     
-                            <strong className='mr-8'>
+                            <strong className='mr-2 md:mr-4 xl:mr-8 text-xss sm:text-xs md:text-sm xl:text-xl'>
                                 {ApplyPara}
                             </strong>
                             <div className='flex justify-center'>
                                 <Link to="https://shopee.co.th/campaigns"
-                                    className="mt-24 ml-8 text-center text-12 font-sans tracking-tight text-green-200 sm:text-xl bg-cyan-700 hover:bg-sky-800 w-62 h-16 rounded-full px-8 py-4"
+                                    className="mt-6 md:mt-12 xl:mt-24 ml-2 md:ml-4 xl:l-8 text-center text-xs font-sans tracking-tight text-green-200 sm:text-lg lg:text-xl bg-cyan-700 hover:bg-sky-800 transition ease-out duration-500 w-28 h-10 sm:w-60 sm:h-12 lg:w-64 lg:h-16 rounded-full px-2 lg:px-8 py-2 sm:py-3 lg:py-4"
                                 >
                                     {ApplyHere}
                                 </Link>
                             </div>
                         </div>
-                        <img className='mr-l object-cover h-96 w-6/12' src="/img_src/Promotionn_test.png" />
+                        <img className='mr-l object-cover h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/Promotionn_test.png" />
                     </div>
                 </div>
-                <div className='flex justify-center flex-col w-full mt-8 bg-gray-200'> 
+                <div className='flex justify-center flex-col w-full mt-2 sm:mt-4 xl:mt-8 bg-gray-200'> 
                         <div className='grid grid-cols-10 gap-4'>   
                             <button
                                 className={TBSLP}
@@ -158,14 +157,14 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                                 {MonthlyPromotion}
                             </div>
                             <button
-                                className='col-start-9 col-end-10 z-40 mt-auto -mb-28 ml-auto -mr-4 w-14 h-14 font-bold bg-teal-600 rounded-full sm:text-4xl text-gray-200 shadow-2xl hover:scale-150 border-2'
+                                className='col-start-9 col-end-10 z-40 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto mr-12 sm:mr-16 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2'
                                 onClick={handleScrollProRight}
                                 >
                                 <p>&#x2BC8;</p>
                             </button> 
                         </div>   
                         <div 
-                            className="ml-auto mr-auto w-10/12 flex flex-row snap-start overflow-x-scroll gap-8 mt-2"
+                            className="ml-auto mr-auto w-10/12 flex flex-row snap-start overflow-x-scroll scroll-smooth gap-3 sm:gap-4 lg:gap-8 mt-2"
                             id="promotionContainer"
                         >
                             {MonthlyPro.map((item) => (  
@@ -181,14 +180,14 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                 </div>
                 <div className="flex justify-center w-full bg-gray-300 py-8">
                     <div className='flex flex-row w-10/12'>
-                        <img className='mr-8 object-cover h-96 w-6/12' src="/img_src/gray_test.png" />
+                        <img className='-ml-2 mr-2 md:mr-4 xl:mr-8 object-cover h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/gray_test.png" />
                         <div className='flex flex-col'> 
-                            <strong className='ml-8'>
+                            <strong className='ml-2 md:ml-4 xl:ml-8 text-xss sm:text-xs md:text-sm xl:text-xl'>
                                 {CompareCradPara}
                             </strong>
                             <div className='flex justify-center'>
                                 <Link to="https://www.citibank.co.th/en/credit-cards/compare/"
-                                    className="mt-24 ml-8 text-center text-12 font-sans tracking-tight text-green-200 sm:text-xl bg-cyan-700 hover:bg-sky-800 w-62 h-16 rounded-full px-8 py-4"
+                                    className="mt-6 md:mt-12 xl:mt-24 ml-2 md:ml-4 xl:l-8 text-center text-xs font-sans tracking-tight text-green-200 sm:text-lg lg:text-xl bg-cyan-700 hover:bg-sky-800 transition ease-out duration-500 w-40 h-10 sm:w-60 sm:h-12 lg:w-64 lg:h-16 rounded-full px-2 lg:px-8 py-2 sm:py-3 lg:py-4"
                                 >
                                     {SearchCompare}
                                 </Link>
@@ -204,132 +203,132 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                 <div className='w-full mt-0 bg-gray-200 py-6'> 
                     <div className='flex flex-row justify-center'>
                         <div className='flex flex-col'>
-                            <img className='mr-4 object-cover h-44 w-96' src="/img_src/gray_test.png" />
-                            <img className='mt-4 mr-4 object-cover h-32 w-96' src="/img_src/gray_test.png" />
+                            <img className='mr-1 sm:mr-2 lg:mr-4 object-cover h-12 w-28 sm:h-24 sm:w-44 lg:h-32 lg:w-72 xl:h-44 xl:w-96' src="/img_src/gray_test.png" />
+                            <img className='mt-2 sm:mt-4 mr-1 sm:mr-2 lg:mr-4 object-cover h-10 w-28 sm:h-20 sm:w-44 lg:h-28 lg:w-72 xl:h-32 xl:w-96' src="/img_src/gray_test.png" />
                         </div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row'>
-                                <img className='mr-4 object-cover h-24 w-96' src="/img_src/gray_test.png" />
-                                <img className='object-cover h-24 w-70' src="/img_src/gray_test.png" />
+                                <img className='mr-1 sm:mr-2 lg:mr-4 object-cover h-6 w-20 sm:h-12 sm:w-44 lg:h-16 lg:w-64 xl:h-24 xl:w-72' src="/img_src/gray_test.png" />
+                                <img className='object-cover h-6 w-8 sm:h-12 sm:w-16 lg:h-16 lg:w-28 xl:h-24 xl:w-48' src="/img_src/gray_test.png" />
                             </div>
-                            <img className='mt-4 object-cover h-52 w-200' src="/img_src/gray_test.png" />
+                            <img className='mt-2 sm:mt-4 object-cover h-16 sm:h-32 lg:h-44 xl:h-52 xl:w-full' src="/img_src/gray_test.png" />
                         </div>
                         <div className='flex flex-col'>
-                            <img className='ml-4 mr-4 object-cover h-44 w-96' src="/img_src/gray_test.png" />
-                            <img className='mt-4 ml-4 mr-4 object-cover h-32 w-96' src="/img_src/gray_test.png" />
+                            <img className='ml-1 mr-1 sm:ml-2 sm:mr-2 lg:ml-4 lg:mr-4 object-cover h-12 w-28 sm:h-24 sm:w-44 lg:h-32 lg:w-80 xl:h-44 xl:w-96' src="/img_src/gray_test.png" />
+                            <img className='mt-2 sm:mt-4 ml-1 mr-1 sm:ml-2 sm:mr-2 lg:ml-4 lg:mr-4 object-cover h-10 w-28 sm:h-20 sm:w-44 lg:h-28 lg:w-80 xl:h-32 xl:w-96' src="/img_src/gray_test.png" />
                         </div>
                     </div>  
                 </div>
                 <div className='w-full mt-0 bg-gray-300 py-8'> 
                     <div className='flex flex-col'>
-                        <div className='flex flex-row justify-center gap-4'>
+                        <div className='flex flex-row justify-center gap-1 sm:gap-2 lg:gap-4'>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 marker:sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                         </div>
-                        <div className='flex flex-row justify-center gap-4'>
+                        <div className='flex flex-row justify-center gap-1 sm:gap-2 lg:gap-4'>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="hidden sm:block mt-2 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/SCB.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/KBank.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="/page"
                                 >
-                                    <img className="mt-2 object-cover h-24 w-24 rounded-3xl hover:scale-105" src="img_src/More.png" alt=""/> 
+                                    <img className="mt-2 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/More.png" alt=""/> 
                                 </Link>
                         </div>
                     </div>
                 </div>
                 <div className='w-full mt-0 bg-teal-600 py-8'> 
-                    <div className='flex justify-center mt-56'>
+                    <div className='flex justify-center mt-16 sm:mt-32 lg:mt-56'>
                         <div className='w-11/12 h-1 bg-gray-300 rounded-xl'>
                         </div>
                     </div>
-                    <h1 className='mt-4 ml-20 sm:text-2xl text-gray-300'>Triple C</h1>
+                    <h1 className='mt-4 ml-5 sm:ml-10 lg:ml-20 sm:text-2xl text-gray-300'>Triple C</h1>
                 </div>
         </div>
     );
