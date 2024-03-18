@@ -57,7 +57,6 @@ export default function PhotoCards_scroll({thaiLan}:{thaiLan: boolean}) {
 
     return (
         <div className='absolute top-16 lg:top-44 w-full flex justify-center'>
-            
             <div className="w-10/12 flex justify-center py-4">
                 <div className='grid grid-row-2'>
                     <div className="flex justify-center py-4 rounded-3xl bg-cover bg-[url('/img_src/rich_sampleBgg.png')]">

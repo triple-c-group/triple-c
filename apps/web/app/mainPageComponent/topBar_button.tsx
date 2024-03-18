@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import { useState } from 'react';
 
-function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean}) {
+function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAboutUs, toTop}:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean, handleContactUs: any, handleAboutUs: any, toTop: any}) {
 
     const [isOpen, setIsOpen] = useState(false);
     
@@ -11,6 +11,14 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, se
     } else {
         TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4';
     }
+
+    let TT = null;
+    if (topbarScroll) {
+        TT = 'fixed bottom-4 right-8 grid grid-row-2 w-16 h-16 py-2 bg-gradient-to-b from-cyan-500 to-teal-400 rounded-full text-center font-bold text-3xl text-gray-200 hover:scale-150 transition ease-out duration-500';
+    } else {
+        TT = 'hidden';
+    }
+
 
     let MyCard = null;
     if (thaiLan) {
@@ -136,14 +144,13 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, se
                     </div>
                     <div className="hidden 
                                     mt-2
-                                    lg:grid grid-cols-2">
-                        <div className="grid grid-cols-3 gap-4">
+                                    lg:flex flex-row justify-center xl:gap-40 lg:gap-16">
                             <Link to="/page"
-                                className="ml-8 px-2 py-2
-                                            text-sm font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
-                                            hover:text-gray-100 hover:scale-105 
-                                            transition ease-out duration-500"
+                                className="px-2 py-2
+                                    text-sm font-sans font-bold tracking-tight text-gray-300 
+                                    sm:text-1xl
+                                    hover:text-gray-100 hover:scale-105 
+                                    transition ease-out duration-500"
                             >
                                 {FindyourIdealCard}
                             </Link>
@@ -165,27 +172,26 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, se
                             >
                                 {ApplyCreditCard}
                             </Link>
-                        </div>
-                        <div className="flex justify-end">
-                            <Link to="/page"
-                                className="mr-4 px-2 py-2 
+                            <button 
+                                className="px-2 py-2 
                                             font-sans font-bold text-sm tracking-tight text-gray-300 
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
+                                onClick={handleAboutUs}
                             >
                                 {AboutUs}
-                            </Link>
-                            <Link to="/page"
-                                className="ml-4 mr-10 px-2 py-2
+                            </button>
+                            <button 
+                                className="px-2 py-2
                                             font-sans font-bold text-sm tracking-tight text-gray-300 
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
+                                onClick={handleContactUs}
                             >
                                 {ContactUs }
-                            </Link>
-                        </div>
+                            </button>
                     </div>
                     <div className="relative inline-block text-left 
                                     lg:hidden">
@@ -306,30 +312,32 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, se
                                     >
                                          {ApplyCreditCard}
                                     </Link>
-                                    <Link 
-                                        to="/page" 
+                                    <button
                                         className="block px-4 py-2 
-                                                text-gray-200 font-sans font-bold text-lg 
+                                                w-full
+                                                text-gray-200 font-sans font-bold text-lg text-left
                                                 bg-sky-700 
                                                 hover:bg-sky-300 hover:text-gray-900 
                                                 border-b-2 border-gray-300  
                                                 transition ease-out duration-500" 
+                                        onClick={handleAboutUs}
                                         role="menuitem"
                                     >
                                         {AboutUs}
-                                    </Link>
-                                    <Link 
-                                        to="/page" 
+                                    </button>
+                                    <button 
                                         className="block px-4 py-2 
-                                                text-gray-200 font-sans font-bold text-lg 
+                                                w-full
+                                                text-gray-200 font-sans font-bold text-lg text-left
                                                 bg-sky-700 
                                                 hover:bg-sky-300 hover:text-gray-900 
                                                 border-b-2 border-gray-300  
                                                 transition ease-out duration-500" 
+                                        onClick={handleContactUs}
                                         role="menuitem"
                                     >
                                     {ContactUs }
-                                    </Link>
+                                    </button>
                                     <div className="px-4 py-2 flex flex-row bg-sky-700">
                                         <button 
                                             className="mr-1 
@@ -362,6 +370,11 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, se
                         )}
                     </div>
                 </div>
+                <button className={TT}
+                    onClick={toTop}
+                >
+                    &#11165;
+                </button>
             </div>
         </div>                 
     );
