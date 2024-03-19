@@ -1,0 +1,23 @@
+create table credit_card(
+card_id int not null auto_increment,
+card_name varchar(255) not null,
+card_description text,
+network_id varchar(25) not null,
+bank_id varchar(25) not null,
+minimum_income int,
+minimum_credit_score int,
+minimum_age tinyint,
+annual_fee int,
+interest_rate float,
+validity_month int,
+cashback_percentage float,
+highlight_benefits text,
+welcome_offer text,
+image_url varchar(255),
+additional_detail text,
+official_detail_url varchar(255),
+affiliate_application_url varchar(255),
+primary key (card_id),
+foreign key (network_id) references network (network_id),
+foreign key (bank_id) references bank (bank_id)
+);
