@@ -8,6 +8,10 @@ on:
     paths:
       - "apps/api/**"
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     name: Build jar file

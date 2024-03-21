@@ -8,6 +8,10 @@ on:
     paths:
       - "apps/recommendation-engine/**"
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   deploy:
     uses: ./.github/workflows/deploy-template.yaml
