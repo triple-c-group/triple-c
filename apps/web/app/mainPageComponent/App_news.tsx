@@ -282,22 +282,23 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                     </div>
                     <div className='mt-2 sm:mt-6 lg:mt-12 flex flex-col gap-3 sm:gap-4 lg:gap-8'>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Tunyagorn.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Chayada.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Jirapat.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Lissa.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Rujapa.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Sirapob.png" alt=""/>
                         </div>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/People/Apersons.jpg" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Jiremeth.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Chanakan.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Thanayut.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Bhasit.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Jules.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-150 transition ease-out duration-500" src="img_src/People/Maxime.png" alt=""/>
                         </div>
                     </div>
-                    <div className='mt-2 sm:mt-6 lg:mt-12 flex flex-row justify-center gap-3 sm:gap-4 lg:gap-8'>
+                    <div className='mt-4 sm:mt-8 lg:mt-16 mb-8 sm:mb-12 lg:mb-24 flex flex-row justify-center gap-3 sm:gap-4 lg:gap-8'>
                         <div className='flex flex-col text-left text-xss font-sans tracking-tight text-black sm:text-md lg:text-xl'>
                             <strong>
                                 {PM}

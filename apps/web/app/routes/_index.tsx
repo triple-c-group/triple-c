@@ -41,13 +41,13 @@ export default function Index() {
     });
 
   const handleContactUs = () => {
-    document.body.scrollTop = 4600;
-    document.documentElement.scrollTop = 4600;
+    document.body.scrollTop = 4800;
+    document.documentElement.scrollTop = 4800;
   };
 
   const handleAboutUs = () => {
-    document.body.scrollTop = 4050;
-    document.documentElement.scrollTop = 4050;
+    document.body.scrollTop = 4100;
+    document.documentElement.scrollTop = 4100;
   };
 
   const toTop = () => {
