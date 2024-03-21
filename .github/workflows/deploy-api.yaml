@@ -1,0 +1,33 @@
+name: Deploy api
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "apps/api/**"
+
+jobs:
+  build:
+    name: Build jar file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: "corretto"
+          java-version: "17"
+
+      - name: Build with Maven
+        run: cd apps/api && mvn clean package -DskipTests
+  deploy:
+    needs: migration
+    uses: ./.github/workflows/deploy-template.yaml
+    with:
+      IMAGE_NAME: ghcr.io/triple-c-group/api:latest
+      DOCKERFILE_PATH: apps/api/Dockerfile
+    secrets: inherit
