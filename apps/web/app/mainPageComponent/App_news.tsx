@@ -46,51 +46,51 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                 <div className='w-full mt-0 bg-gray-200 py-8'> 
                     <div className='flex flex-col gap-4 sm:gap-6 lg:gap-10'>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
-                                <Link to="https://www.kasikornbank.com/th/personal"
-                                >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
-                                </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
-                                </Link>
-                                <Link to="https://www.scb.co.th/th/personal-banking.html"
-                                >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
-                                </Link>
-                                <Link to="https://www.bualuang.co.th/?lg=th"
-                                >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/SCB.jpg" alt=""/> 
+                                </Link>
+                                <Link to="https://krungthai.com/th/personal"
+                                >
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Krungthai.png" alt=""/> 
+                                </Link>
+                                <Link to="https://www.bualuang.co.th/?lg=th"
+                                >
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Bualuang.png" alt=""/> 
+                                </Link>
+                                <Link to="https://www.scb.co.th/th/personal-banking.html"
+                                >
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/SCB.png" alt=""/> 
                                 </Link>
                         </div>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Bualuang.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/SCB.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/SCB.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.kasikornbank.com/th/personal"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bualuang.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Bualuang.png" alt=""/> 
                                 </Link>
                                 <img className="opacity-0 object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl" src="" alt=""/> 
                         </div>
@@ -105,19 +105,19 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                     </div>
                     <div className='mt-2 sm:mt-6 lg:mt-12 flex flex-col gap-3 sm:gap-4 lg:gap-8'>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
                         </div>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
-                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
+                            <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-full hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/>
                         </div>
                     </div>
                     <div className='mt-2 sm:mt-6 lg:mt-12 flex flex-row justify-center gap-3 sm:gap-4 lg:gap-8'>

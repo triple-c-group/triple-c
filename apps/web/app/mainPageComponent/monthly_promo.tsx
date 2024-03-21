@@ -21,14 +21,14 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
     const handleScrollProRight = () => {
         const promotionContainer = document.getElementById('promotionContainer');
         if (promotionContainer) {
-            promotionContainer.scrollLeft += 400;
+            promotionContainer.scrollLeft += 500;
         }
     };
 
     const handleScrollProLeft = () => {
         const promotionContainer = document.getElementById('promotionContainer');
         if (promotionContainer) {
-            promotionContainer.scrollLeft-= 400;
+            promotionContainer.scrollLeft-= 500;
         }
     };
 
@@ -47,9 +47,9 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
 
     let TBSLP = null;
     if (showScrollProLeft) {
-        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2"
+        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500"
     } else {
-        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2"
+        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500"
     }
 
     let MonthlyPromotion = null;
@@ -72,26 +72,30 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
                         {MonthlyPromotion}
                     </div>
                     <button
-                        className='col-start-9 col-end-10 z-40 mt-auto -mb-20 sm:-mb-24 lg:-mb-28 ml-auto mr-12 sm:mr-16 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500 border-2'
+                        className='col-start-9 col-end-10 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto mr-12 sm:mr-16 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500'
                         onClick={handleScrollProRight}
                         >
                         <p>&#x2BC8;</p>
                     </button> 
-                </div>   
-                <div 
-                    className="ml-auto mr-auto w-10/12 flex flex-row snap-start overflow-x-scroll scroll-smooth gap-3 sm:gap-4 lg:gap-8 mt-2"
-                    id="promotionContainer"
-                >
-                    {MonthlyPro.map((item) => (  
-                        <Link to="https://www.citibank.co.th/en/credit-cards/compare/"
-                        className={item.bttn}
-                        >
-                            <div  className="opacity-0">   
-                                JustUnseenTextForSizing   
-                            </div>  
-                        </Link>
-                    ))}
-                </div>
+                </div>  
+                <div className='grid grid-cols-10 gap-4'>
+                    <div 
+                        className="col-start-2 col-end-9 ml-auto mr-auto w-full flex flex-row snap-start overflow-x-scroll scroll-smooth gap-4 sm:gap-6 lg:gap-12 mt-2"
+                        id="promotionContainer"
+                    >
+                        {MonthlyPro.map((item) => (  
+                            <div className="scroll-ms-6 snap-start">
+                                <Link to="https://www.citibank.co.th/en/credit-cards/compare/"
+                                    className={`w-32 h-32 sm:w-36 sm:h-36 lg:w-56 lg:h-56 rounded-2xl mb-8 mt-4 inline-block hover:scale-105 transition ease-out duration-500 bg-cover bg-center ${item.bttn}`}
+                                >
+                                    <div  className="opacity-0">   
+                                        JustUnseenTextForSizing   
+                                    </div>  
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div> 
         </div>
     );
 }

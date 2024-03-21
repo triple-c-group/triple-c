@@ -59,7 +59,7 @@ export default function PhotoCards_scroll({thaiLan}:{thaiLan: boolean}) {
         <div className='absolute top-16 lg:top-44 w-full flex justify-center'>
             <div className="w-10/12 flex justify-center py-4">
                 <div className='grid grid-row-2'>
-                    <div className="flex justify-center py-4 rounded-3xl bg-cover bg-[url('/img_src/rich_sampleBgg.png')]">
+                    <div className="flex justify-center py-4 rounded-3xl bg-cover bg-[url('/img_src/surprised-woman-with-card-hand_2.png')]">
                         <div className='grid grid-row-2'>
                             <div className='grid grid-cols-3'>   
                                 <button
@@ -69,7 +69,7 @@ export default function PhotoCards_scroll({thaiLan}:{thaiLan: boolean}) {
                                     <p>&#x2BC7;</p>
                                 </button> 
                                 <div className="ml-auto mr-auto mt-3 mb-8 h-auto flex justify-center opacity-0">
-                                    <img className="mt-2 object-cover h-auto w-8/12 lg:w-10/12 rounded-t-3xl " src="/img_src/rich_sampleBgg.png" alt=""/>
+                                    <img className="mt-2 object-cover h-auto w-8/12 lg:w-10/12 rounded-t-3xl " src="/img_src/surprised-woman-with-card-hand_2.png" alt=""/>
                                 </div>
                                 <button
                                     className='z-40 mt-auto -mb-24 sm:-mb-28 md:-mb-32 lg:-mb-48 ml-auto mr-12 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500'
@@ -79,13 +79,13 @@ export default function PhotoCards_scroll({thaiLan}:{thaiLan: boolean}) {
                                 </button> 
                             </div>    
                             <div 
-                                className="ml-auto mr-auto mt-6 mb-4 sm:mt-8 sm:mb-6 lg:mt-16 lg:mb-12 w-11/12  flex flex-row snap-start overflow-x-scroll gap-4 lg:gap-8 scroll-smooth bg-gray-200 bg-opacity-70 border-4 border-lime-500 rounded-3xl px-2 lg:px-8 shadow-2xl"
+                                className="ml-auto mr-auto mt-6 mb-4 sm:mt-8 sm:mb-6 lg:mt-16 lg:mb-12 w-11/12  flex flex-row snap-start overflow-hidden gap-4 lg:gap-8 scroll-smooth bg-gray-200 bg-opacity-70 border-4 border-lime-500 rounded-3xl px-2 lg:px-8 shadow-2xl"
                                 id="recommedationContainer"
                             >
                                             
                                         {ReccomendCard.map((item) => (  
                                             <Link to={item.to}
-                                            className={item.bttn}
+                                                className={`w-28 h-20 lg:w-60 lg:h-40 rounded-2xl mb-8 mt-4 inline-block hover:scale-105 transition ease-out duration-500 bg-cover bg-center ${item.bttn}`}
                                             >
                                                 <div  className="opacity-0">   
                                                     JustUnseenTextForSizingggggggg  

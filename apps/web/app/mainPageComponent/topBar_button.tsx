@@ -97,7 +97,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                         lg:flex justify-end">
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4
-                                            text-12xl font-sans font-bold text-gray-300 
+                                            text-md font-sans font-bold text-gray-300 
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
@@ -106,7 +106,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </Link>
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4 
-                                            text-12xl font-sans font-bold text-cyan-700 
+                                            text-md font-sans font-bold text-cyan-700 
                                             sm:text-1xl 
                                             bg-gray-300 
                                             hover:bg-gray-100 hover:scale-105 hover:bg-opacity-90 
@@ -116,7 +116,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </Link>
                             <button 
                                 className="mb-10 ml-4 px-2
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
                                             sm:text-1xl
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
@@ -125,14 +125,14 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                 TH
                             </button>
                             <h1 className="mr-1 ml-1 
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
                                             sm:text-1xl 
                                             transition ease-out duration-500">
                                 │
                             </h1>
                             <button 
                                 className="mb-10 mr-12 px-2 
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300  
+                                            text-md font-sans font-bold tracking-tight text-gray-300  
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
@@ -144,19 +144,19 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                     </div>
                     <div className="hidden 
                                     mt-2
-                                    lg:flex flex-row justify-center xl:gap-40 lg:gap-16">
+                                    lg:flex flex-row justify-center xl:gap-36 lg:gap-16">
                             <Link to="/page"
                                 className="px-2 py-2
-                                    text-sm font-sans font-bold tracking-tight text-gray-300 
-                                    sm:text-1xl
-                                    hover:text-gray-100 hover:scale-105 
-                                    transition ease-out duration-500"
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
+                                            sm:text-1xl
+                                            hover:text-gray-100 hover:scale-105 
+                                            transition ease-out duration-500"
                             >
                                 {FindyourIdealCard}
                             </Link>
                             <Link to="/page"
                                 className="px-2 py-2
-                                            text-sm font-sans font-bold tracking-tight text-gray-300 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
                                             sm:text-1xl
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
@@ -165,7 +165,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </Link>
                             <Link to="/page"
                                 className="px-2 py-2 
-                                            text-sm font-sans font-bold tracking-tight text-gray-300 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
                                             sm:text-1xl
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
@@ -174,7 +174,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </Link>
                             <button 
                                 className="px-2 py-2 
-                                            font-sans font-bold text-sm tracking-tight text-gray-300 
+                                            text-md font-sans font-bold text-sm tracking-tight text-gray-300 
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
@@ -184,7 +184,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </button>
                             <button 
                                 className="px-2 py-2
-                                            font-sans font-bold text-sm tracking-tight text-gray-300 
+                                            text-md font-sans font-bold text-sm tracking-tight text-gray-300 
                                             sm:text-1xl 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"

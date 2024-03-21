@@ -9,6 +9,7 @@ import MonthlyPromotion from "~/mainPageComponent/monthly_promo";
 import CompareCardForum from "~/mainPageComponent/compareCard_forum";
 import ApplyHereForum from "~/mainPageComponent/applyHere_forum";
 import BlueMidTab from "~/mainPageComponent/blue_mid_tab";
+import CSlider from "~/mainPageComponent/cslider";
 import { useThaiLanState } from "../language_Component/enOrTh";
 import { useState, useEffect } from "react";
 
@@ -75,6 +76,9 @@ export default function Index() {
                   handleAboutUs={handleAboutUs}
                   toTop={toTop}
                 />
+              </div>
+              <div>
+                <CSlider />
               </div>
               <div>
                 <CompareCardForum thaiLan={thaiLan}/>
