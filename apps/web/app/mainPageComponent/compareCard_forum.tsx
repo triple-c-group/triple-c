@@ -21,7 +21,7 @@ export default function CompareCardForum({thaiLan}:{thaiLan: boolean}) {
     return (
         <div className="flex justify-center w-full mt-12 sm:mt-24 xl:mt-40">
             <div className='flex flex-row w-10/12'>
-                <img className='-ml-2 mr-2 md:mr-4 xl:mr-8 object-cover rounded-md sm:rounded-lg md:rounded-xl lg:rounded-3xl h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/CompCard.png" />
+                <img className='-ml-2 mr-2 md:mr-4 xl:mr-8 object-cover rounded-md sm:rounded-lg md:rounded-xl lg:rounded-3xl h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/News&Article/CompCard.png" />
                 <div className='flex flex-col'> 
                     <p className='ml-2 md:ml-16 xl:ml-32 sm:mt-2 lg:mt-6 text-justify text-xss sm:text-xs md:text-sm lg:text-xl xl:text-2xl'>
                         {CompareCardPara}

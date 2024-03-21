@@ -14,7 +14,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
 
     let TT = null;
     if (topbarScroll) {
-        TT = 'fixed bottom-4 right-8 grid grid-row-2 w-16 h-16 py-2 bg-gradient-to-b from-cyan-500 to-teal-400 rounded-full text-center font-bold text-3xl text-gray-200 hover:scale-150 transition ease-out duration-500';
+        TT = 'fixed bottom-4 right-8 grid grid-row-2 w-16 h-16 py-2 bg-gradient-to-b from-sky-600 to-teal-500 rounded-full border-gray-200 border-2 text-center font-bold text-3xl text-gray-200 hover:scale-150 transition ease-out duration-500';
     } else {
         TT = 'hidden';
     }
@@ -88,7 +88,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                         h-14 w-auto object-cover
                                         lg:h-20 
                                         2xl:h-20" 
-                            src="/img_src/TripleC_logooo.png" 
+                            src="/img_src/logo/TripleC_logooo.png" 
                             alt=""
                         />
                         </div>
@@ -148,7 +148,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             <Link to="/page"
                                 className="px-2 py-2
                                             text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            sm:text-lg
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                             >
@@ -157,7 +157,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             <Link to="/page"
                                 className="px-2 py-2
                                             text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            sm:text-lg
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                             >
@@ -166,7 +166,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             <Link to="/page"
                                 className="px-2 py-2 
                                             text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            sm:text-lg
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
                             >
@@ -174,8 +174,8 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </Link>
                             <button 
                                 className="px-2 py-2 
-                                            text-md font-sans font-bold text-sm tracking-tight text-gray-300 
-                                            sm:text-1xl 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
+                                            sm:text-lg 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={handleAboutUs}
@@ -184,13 +184,13 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             </button>
                             <button 
                                 className="px-2 py-2
-                                            text-md font-sans font-bold text-sm tracking-tight text-gray-300 
-                                            sm:text-1xl 
+                                            text-md font-sans font-bold tracking-tight text-gray-300 
+                                            sm:text-lg 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                                 onClick={handleContactUs}
                             >
-                                {ContactUs }
+                                {ContactUs}
                             </button>
                     </div>
                     <div className="relative inline-block text-left 

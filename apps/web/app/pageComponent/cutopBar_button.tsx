@@ -87,7 +87,7 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                         h-14 w-auto object-cover
                                         lg:h-20 
                                         2xl:h-20" 
-                            src="/img_src/TripleC_logooo.png" 
+                            src="/img_src/logo/TripleC_logooo.png" 
                             alt=""
                         />
                         </div>
@@ -96,8 +96,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                         lg:flex justify-end">
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4
-                                            text-12xl font-sans font-bold text-gray-300 
-                                            sm:text-1xl 
+                                            font-sans font-bold text-gray-300 
+                                            text-md sm:text-lg  
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                             >
@@ -105,8 +105,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                             </Link>
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4 
-                                            text-12xl font-sans font-bold text-cyan-700 
-                                            sm:text-1xl 
+                                            font-sans font-bold text-cyan-700 
+                                            text-md sm:text-lg 
                                             bg-gray-300 
                                             hover:bg-gray-100 hover:scale-105 hover:bg-opacity-90 
                                             transition ease-out duration-500"
@@ -115,8 +115,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                             </Link>
                             <button 
                                 className="mb-10 ml-4 px-2
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            font-sans font-bold tracking-tight text-gray-300 
+                                            text-md sm:text-lg 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(true)}
@@ -124,15 +124,15 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                 TH
                             </button>
                             <h1 className="mr-1 ml-1 
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl 
+                                            font-sans font-bold tracking-tight text-gray-300 
+                                            text-md sm:text-lg  
                                             transition ease-out duration-500">
                                 │
                             </h1>
                             <button 
                                 className="mb-10 mr-12 px-2 
-                                            text-12xl font-sans font-bold tracking-tight text-gray-300  
-                                            sm:text-1xl 
+                                            font-sans font-bold tracking-tight text-gray-300  
+                                            text-md sm:text-lg 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(false)}
@@ -146,8 +146,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                     lg:flex flex-row justify-center xl:gap-32 lg:gap-12">
                             <Link to="/"
                                 className="px-2 py-2
-                                    text-sm font-sans font-bold tracking-tight text-gray-300 
-                                    sm:text-1xl
+                                    font-sans font-bold tracking-tight text-gray-300 
+                                    text-md sm:text-lg 
                                     hover:text-gray-100 hover:scale-105 
                                     transition ease-out duration-500"
                             >
@@ -155,8 +155,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                             </Link>
                             <Link to="/page"
                                 className="px-2 py-2
-                                    text-sm font-sans font-bold tracking-tight text-gray-300 
-                                    sm:text-1xl
+                                    font-sans font-bold tracking-tight text-gray-300 
+                                    text-md sm:text-lg 
                                     hover:text-gray-100 hover:scale-105 
                                     transition ease-out duration-500"
                             >
@@ -164,8 +164,8 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                             </Link>
                             <Link to="/page"
                                 className="px-2 py-2
-                                            text-sm font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            font-sans font-bold tracking-tight text-gray-300 
+                                            text-md sm:text-lg 
                                             hover:text-gray-100 hover:scale-105 
                                             transition ease-out duration-500"
                             >
@@ -173,30 +173,12 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                             </Link>
                             <Link to="/page"
                                 className="px-2 py-2 
-                                            text-sm font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
+                                            font-sans font-bold tracking-tight text-gray-300 
+                                            text-md sm:text-lg 
                                             hover:text-gray-100 hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {ApplyCreditCard}
-                            </Link>
-                            <Link to="/page"
-                                className="px-2 py-2 
-                                            font-sans font-bold text-sm tracking-tight text-gray-300 
-                                            sm:text-1xl 
-                                            hover:text-gray-100 hover:scale-105
-                                            transition ease-out duration-500"
-                            >
-                                {AboutUs}
-                            </Link>
-                            <Link to="/contactUs_page"
-                                className="px-2 py-2
-                                            font-sans font-bold text-sm tracking-tight text-gray-300 
-                                            sm:text-1xl 
-                                            hover:text-gray-100 hover:scale-105 
-                                            transition ease-out duration-500"
-                            >
-                                {ContactUs }
                             </Link>
                     </div>
                     <div className="relative inline-block text-left 
@@ -327,30 +309,6 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                         role="menuitem"
                                     >
                                          {ApplyCreditCard}
-                                    </Link>
-                                    <Link 
-                                        to="/page" 
-                                        className="block px-4 py-2 
-                                                text-gray-200 font-sans font-bold text-lg 
-                                                bg-sky-700 
-                                                hover:bg-sky-300 hover:text-gray-900 
-                                                border-b-2 border-gray-300  
-                                                transition ease-out duration-500" 
-                                        role="menuitem"
-                                    >
-                                        {AboutUs}
-                                    </Link>
-                                    <Link 
-                                        to="/contactUs_page" 
-                                        className="block px-4 py-2 
-                                                text-gray-200 font-sans font-bold text-lg 
-                                                bg-sky-700 
-                                                hover:bg-sky-300 hover:text-gray-900 
-                                                border-b-2 border-gray-300  
-                                                transition ease-out duration-500" 
-                                        role="menuitem"
-                                    >
-                                    {ContactUs }
                                     </Link>
                                     <div className="px-4 py-2 flex flex-row bg-sky-700">
                                         <button 

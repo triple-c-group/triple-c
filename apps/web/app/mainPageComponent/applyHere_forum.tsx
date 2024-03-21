@@ -32,7 +32,7 @@ export default function ApplyHereForum({thaiLan}:{thaiLan: boolean}) {
                         </Link>
                     </div>
                 </div>
-                <img className='mr-l object-cover rounded-md sm:rounded-lg md:rounded-xl lg:rounded-3xl h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/ApplyHere.png" />
+                <img className='mr-l object-cover rounded-md sm:rounded-lg md:rounded-xl lg:rounded-3xl h-28 sm:h-48 md:h-64 lg:h-96 w-6/12' src="/img_src/News&Article/ApplyHere.png" />
             </div>
         </div>
     );

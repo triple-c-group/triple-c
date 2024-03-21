@@ -41,13 +41,13 @@ export default function Index() {
     });
 
   const handleContactUs = () => {
-    document.body.scrollTop = 3600;
-    document.documentElement.scrollTop = 3600;
+    document.body.scrollTop = 4600;
+    document.documentElement.scrollTop = 4600;
   };
 
   const handleAboutUs = () => {
-    document.body.scrollTop = 3050;
-    document.documentElement.scrollTop = 3050;
+    document.body.scrollTop = 4050;
+    document.documentElement.scrollTop = 4050;
   };
 
   const toTop = () => {
@@ -78,7 +78,7 @@ export default function Index() {
                 />
               </div>
               <div>
-                <CSlider />
+                <CSlider thaiLan={thaiLan}/>
               </div>
               <div>
                 <CompareCardForum thaiLan={thaiLan}/>
