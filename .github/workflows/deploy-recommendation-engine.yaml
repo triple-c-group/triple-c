@@ -10,7 +10,6 @@ on:
 
 jobs:
   deploy:
-    needs: migration
     uses: ./.github/workflows/deploy-template.yaml
     with:
       IMAGE_NAME: ghcr.io/triple-c-group/recommendation-engine:latest

@@ -25,7 +25,7 @@ jobs:
       - name: Build with Maven
         run: cd apps/api && mvn clean package -DskipTests
   deploy:
-    needs: migration
+    needs: build
     uses: ./.github/workflows/deploy-template.yaml
     with:
       IMAGE_NAME: ghcr.io/triple-c-group/api:latest
