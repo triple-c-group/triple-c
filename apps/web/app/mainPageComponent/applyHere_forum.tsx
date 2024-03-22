@@ -26,7 +26,7 @@ export default function ApplyHereForum({thaiLan}:{thaiLan: boolean}) {
                     </p>
                     <div className='flex justify-center'>
                         <Link to="https://shopee.co.th/campaigns"
-                            className="mr-8 md:mr-16 xl:mr-32 mt-3 md:mt-6 xl:mt-12 ml-2 md:ml-4 xl:l-8 text-center text-sm sm:text-lg lg:text-xl font-sans font-bold tracking-wide text-green-200 sm:text-lg bg-cyan-700 hover:bg-sky-800 transition ease-out duration-500 w-28 h-10 sm:w-60 sm:h-12 lg:w-64 lg:h-16 rounded-full px-2 lg:px-8 py-2 sm:py-3 lg:py-4"
+                            className="mr-8 md:mr-16 xl:mr-32 mt-3 md:mt-6 xl:mt-12 ml-2 md:ml-4 xl:l-8 text-center text-sm sm:text-lg lg:text-xl font-sans font-bold tracking-wide text-gray-100 sm:text-lg bg-sky-700 hover:bg-sky-900 transition ease-out duration-500 w-28 h-10 sm:w-60 sm:h-12 lg:w-64 lg:h-16 rounded-full px-2 lg:px-8 py-2 sm:py-3 lg:py-4"
                         >
                             {ApplyHere}
                         </Link>

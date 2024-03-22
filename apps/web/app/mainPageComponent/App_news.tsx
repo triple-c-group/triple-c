@@ -232,9 +232,9 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                                 >
                                     <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/KBank.png" alt=""/> 
                                 </Link>
-                                <Link to="https://www.rbs.co.uk/"
+                                <Link to="https://www.centralthe1card.com/th/Home.html"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/rbs.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/ct1.png" alt=""/> 
                                 </Link>
                                 <Link to="https://krungthai.com/th/personal"
                                 >

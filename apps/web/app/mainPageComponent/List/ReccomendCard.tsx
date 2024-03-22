@@ -31,7 +31,7 @@ export const ReccomendCard = [
     },
     {
         id: 7,
-        bttn: "bg-[url('/img_src/CreditCardSample.png')]",
+        bttn: "bg-[url('/img_src/Scrollcomp/CreditCardSample.png')]",
         to: "https://www.visa.co.th/th_TH"
     },
     {
