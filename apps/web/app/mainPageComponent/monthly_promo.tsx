@@ -85,7 +85,7 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}, props: SV
                 </div>  
                 <div className='grid grid-cols-10 gap-4'>
                     <div 
-                        className="col-start-2 col-end-9 ml-auto mr-auto w-full flex flex-row snap-start overflow-x-scroll scroll-smooth gap-4 sm:gap-6 lg:gap-12 mt-2"
+                        className="col-start-2 col-end-9 ml-auto mr-auto w-full flex flex-row snap-start overflow-hidden scroll-smooth gap-4 sm:gap-6 lg:gap-12 mt-2"
                         id="promotionContainer"
                     >
                         {MonthlyPro.map((item) => (  
