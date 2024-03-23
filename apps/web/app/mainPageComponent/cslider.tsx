@@ -1,7 +1,7 @@
+import { useState } from "react";
+import { SVGAttributes } from "react";
 
-import { JSXElementConstructor, ReactElement, ReactNode, useState } from "react";
-
-const CSlider = ({thaiLan}:{thaiLan: boolean}) => {
+const CSlider = ({thaiLan}:{thaiLan: boolean}, props: SVGAttributes<SVGElement>) => {
     let deff: string = "";
     if (thaiLan) {
         deff = 'ผู้ช่วยส่วนตัวที่จะค้นหาบัตรทางออนไลน์ให้คุณ';
@@ -108,18 +108,18 @@ const CSlider = ({thaiLan}:{thaiLan: boolean}) => {
                 return (
                         <>
                             <div className={`${currentSlide === 0 ? "absolute grid grid-cols-12 gap-0 w-full top-1/2 mt-2 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-12 2xl:mt-16 transition ease-out duration-500" : "hidden"}`}>
-                                <div className="col-start-3 col-end-12 sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-sans text-gray-100">
+                                <div className="col-start-3 col-end-12 text-xss sm:text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-sans text-gray-100">
                                     {deff}        
                                 </div>
                             </div>
                             <div className={`${currentSlide === 1 ? "absolute grid grid-cols-12 gap-8 w-full top-0 mt-8 sm:mt-10 md:mt-20 lg:mt-24 xl:mt-28 2xl:mt-40 transition ease-out duration-500" : "hidden"}`}>
-                                <div className="col-start-3 col-end-11 text-xsss sm:text-xss md:text-xs lg:text-sm xl:text-lg 2xl:text-xl font-sans tracking-normal text-center text-gray-100">
+                                <div className="col-start-3 col-end-11 text-xssss sm:text-xss md:text-xs lg:text-sm xl:text-lg 2xl:text-xl font-sans tracking-normal text-center text-gray-100">
                                     {goal}                            
                                 </div>       
                             </div>
                             <div className={`${currentSlide === 2 ? "absolute w-full top-0 place-items-center transition ease-out duration-500" : "hidden"}`}>
-                                <div className="flex flex-row justify-center gap-8 py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 2xl:py-44">     
-                                    <div className="ml-8 sm:ml-16 md:ml-20 lg:ml-52 xl:ml-60 2xl:ml-28 mr-0 sm:mr-2 md:mr-3 lg:mr-4 xl:mr-6 2xl:mr-8 flex flex-col text-xss sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl font-sans text-gray-100">
+                                <div className="flex flex-row justify-center gap-8 py-8 sm:py-16 md:py-20 lg:py-28 xl:py-36 2xl:py-44">     
+                                    <div className="ml-8 sm:ml-16 md:ml-20 lg:ml-52 xl:ml-60 2xl:ml-28 mr-0 sm:mr-2 md:mr-3 lg:mr-4 xl:mr-6 2xl:mr-8 flex flex-col text-xssss sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl font-sans text-gray-100">
                                         <p className="mt-2 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-12 2xl:mt-16">
                                             {detl_1}
                                         </p>
@@ -136,16 +136,20 @@ const CSlider = ({thaiLan}:{thaiLan: boolean}) => {
             </div>  
             <div className="absolute -top-2 sm:-top-4 lg:-top-10 h-full w-full justify-between item-center flex px-4 sm:px-12 lg:px-20 text-gray-200 text-xl sm:text-2xl lg:text-5xl" > 
                 <button
-                    className=""
+                    className="text-white hover:text-gray-400 transition ease-out duration-500"
                     onClick={goToPrevSlide}
                     >
-                    &#11164;
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-16 lg:h-16">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                        </svg>
                 </button>
                 <button
-                    className=""
+                    className="text-white hover:text-gray-400 transition ease-out duration-500"
                     onClick={goToNextSlide}
                     >
-                    &#11166;
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-16 lg:h-16">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                        </svg>
                 </button>
             </div>
             <div className="absolute bottom-0 py-6 sm:py-8 lg:py-14 xl:py-20 flex justify-center gap-1 md:gap-2 lg:gap-3 w-full">

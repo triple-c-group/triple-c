@@ -1,24 +1,18 @@
 import { Link } from "@remix-run/react";
+import { SVGAttributes } from "react";
 import { useState } from 'react';
 
-function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAboutUs, toTop}:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean, handleContactUs: any, handleAboutUs: any, toTop: any}) {
+
+function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAboutUs}:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean, handleContactUs: any, handleAboutUs: any}, props: SVGAttributes<SVGElement>) {
 
     const [isOpen, setIsOpen] = useState(false);
     
     let TBS = null;
     if (topbarScroll) {
-        TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4 bg-gradient-to-b from-cyan-600 to-teal-500 rounded-b-3xl ';
+        TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4 bg-gradient-to-b from-cyan-600 to-turgnoise rounded-b-3xl ';
     } else {
         TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4';
     }
-
-    let TT = null;
-    if (topbarScroll) {
-        TT = 'fixed bottom-4 right-8 grid grid-row-2 w-16 h-16 py-2 bg-gradient-to-b from-sky-600 to-teal-500 rounded-full border-gray-200 border-2 text-center font-bold text-3xl text-gray-200 hover:scale-150 transition ease-out duration-500';
-    } else {
-        TT = 'hidden';
-    }
-
 
     let MyCard = null;
     if (thaiLan) {
@@ -88,7 +82,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                         h-14 w-auto object-cover
                                         lg:h-20 
                                         2xl:h-20" 
-                            src="/img_src/logo/TripleC_logooo.png" 
+                            src="/img_src/logo/TripleC_logoo.png" 
                             alt=""
                         />
                         </div>
@@ -97,9 +91,9 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                         lg:flex justify-end">
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4
-                                            text-md font-sans font-bold text-gray-300 
-                                            sm:text-1xl 
-                                            hover:text-gray-100 hover:scale-105 
+                                            text-md font-sans font-bold text-white 
+                                            sm:text-llg 
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {MyCard}
@@ -107,34 +101,34 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4 
                                             text-md font-sans font-bold text-cyan-700 
-                                            sm:text-1xl 
-                                            bg-gray-300 
-                                            hover:bg-gray-100 hover:scale-105 hover:bg-opacity-90 
+                                            sm:text-llg 
+                                            bg-white 
+                                            hover:text-white hover:bg-gray-900 hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {Name}
                             </Link>
                             <button 
                                 className="mb-10 ml-4 px-2
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl
-                                            hover:text-gray-100 hover:scale-105 
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            sm:text-llg
+                                            hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(true)}
                                 >
                                 TH
                             </button>
                             <h1 className="mr-1 ml-1 
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-1xl 
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            sm:text-llg 
                                             transition ease-out duration-500">
                                 │
                             </h1>
                             <button 
                                 className="mb-10 mr-12 px-2 
-                                            text-md font-sans font-bold tracking-tight text-gray-300  
-                                            sm:text-1xl 
-                                            hover:text-gray-100 hover:scale-105
+                                            text-md font-sans font-bold tracking-tight text-white  
+                                            sm:text-llg 
+                                            hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(false)}
                                 >
@@ -143,50 +137,54 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                         </div>
                     </div>
                     <div className="hidden 
-                                    mt-2
-                                    lg:flex flex-row justify-center xl:gap-36 lg:gap-16">
+                                    lg:flex flex-row justify-center xl:gap-24 lg:gap-10">
                             <Link to="/page"
-                                className="px-2 py-2
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-lg
-                                            hover:text-gray-100 hover:scale-105 
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {FindyourIdealCard}
                             </Link>
                             <Link to="/page"
-                                className="px-2 py-2
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-lg
-                                            hover:text-gray-100 hover:scale-105 
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {CompareCreditCard}
                             </Link>
                             <Link to="/page"
-                                className="px-2 py-2 
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-lg
-                                            hover:text-gray-100 hover:scale-105
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {ApplyCreditCard}
                             </Link>
                             <button 
-                                className="px-2 py-2 
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg 
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={handleAboutUs}
                             >
                                 {AboutUs}
                             </button>
                             <button 
-                                className="px-2 py-2
-                                            text-md font-sans font-bold tracking-tight text-gray-300 
-                                            sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105 
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg 
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={handleContactUs}
                             >
@@ -199,7 +197,7 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                             <button
                                 type="button"
                                 className="absolute -top-12 right-2 inline-flex justify-center 
-                                            font-bold text-4xl text-gray-200 
+                                            font-bold text-white 
                                             hover:text-gray-400 
                                             transition ease-out duration-500"
                                 id="select_menu"
@@ -207,7 +205,10 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                                 aria-haspopup="true"
                                 onClick={() => setIsOpen(!isOpen)}
                             >   
-                                &#x2630;
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+
                             </button>
                         </div>
 
@@ -370,13 +371,9 @@ function TopBar({ topbarScroll, setThaiLan, thaiLan, handleContactUs, handleAbou
                         )}
                     </div>
                 </div>
-                <button className={TT}
-                    onClick={toTop}
-                >
-                    &#11165;
-                </button>
             </div>
         </div>                 
     );
 }
 export default TopBar;
+

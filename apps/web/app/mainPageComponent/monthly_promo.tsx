@@ -1,8 +1,9 @@
 import { Link } from "@remix-run/react";
 import {MonthlyPro} from './List/MonthlyPro';
 import { useEffect, useState } from 'react';
+import { SVGAttributes } from "react";
 
-export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
+export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}, props: SVGAttributes<SVGElement>) {
 
     const [showScrollProLeft, setShowScrollProLeft] = useState(false);
 
@@ -10,7 +11,7 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
         const promotionContainer = document.getElementById('promotionContainer');
         if (promotionContainer) {
             const scrollPositiomPro_L = promotionContainer.scrollLeft
-            if (scrollPositiomPro_L > 80) {
+            if (scrollPositiomPro_L > 20) {
                 setShowScrollProLeft(true);
             } else {
                 setShowScrollProLeft(false);
@@ -21,14 +22,14 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
     const handleScrollProRight = () => {
         const promotionContainer = document.getElementById('promotionContainer');
         if (promotionContainer) {
-            promotionContainer.scrollLeft += 500;
+            promotionContainer.scrollLeft += 143;
         }
     };
 
     const handleScrollProLeft = () => {
         const promotionContainer = document.getElementById('promotionContainer');
         if (promotionContainer) {
-            promotionContainer.scrollLeft-= 500;
+            promotionContainer.scrollLeft-= 143;
         }
     };
 
@@ -47,9 +48,9 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
 
     let TBSLP = null;
     if (showScrollProLeft) {
-        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500"
+        TBSLP = "col-start-1 col-end-2 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-turgnoise rounded-full grid justify-items-center py-1 text-white shadow-2xl hover:scale-150 transition ease-out duration-500"
     } else {
-        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500"
+        TBSLP = "opacity-0 -z-10 col-start-1 col-end-2 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto -mr-12 sm:-mr-16 lg:-mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-turgnoise rounded-full grid justify-items-center py-1 text-white shadow-2xl hover:scale-150 transition ease-out duration-500"
     }
 
     let MonthlyPromotion = null;
@@ -60,22 +61,26 @@ export default function MonthlyPromotion({thaiLan}:{thaiLan: boolean}) {
     }
 
     return(
-        <div className='flex justify-center flex-col w-full mt-2 sm:mt-4 xl:mt-8 bg-gray-200'> 
+        <div className='flex justify-center flex-col w-full mt-2 sm:mt-4 xl:mt-8 bg-white'> 
                 <div className='grid grid-cols-10 gap-4'>   
                     <button
                         className={TBSLP}
                         onClick={handleScrollProLeft}
                         >
-                        <p>&#x2BC7;</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 font-bold">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                        </svg>
                     </button>     
                     <div className='col-start-2 col-end-9 ml-0 mr-auto w-10/12 text-12 font-sans font-bold tracking-tight text-gray-900 sm:text-2xl'>
                         {MonthlyPromotion}
                     </div>
                     <button
-                        className='col-start-9 col-end-10 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto mr-12 sm:mr-16 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-teal-600 rounded-full sm:text-2xl lg:text-4xl text-gray-200 shadow-2xl hover:scale-150 transition ease-out duration-500'
+                        className='col-start-9 col-end-10 z-40 mt-auto -mb-24 sm:-mb-28 lg:-mb-40 ml-auto mr-12 sm:mr-16 lg:mr-24 w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 font-bold bg-turgnoise rounded-full grid justify-items-center py-1 text-white shadow-2xl hover:scale-150 transition ease-out duration-500'
                         onClick={handleScrollProRight}
-                        >
-                        <p>&#x2BC8;</p>
+                    >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 font-bold">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
                     </button> 
                 </div>  
                 <div className='grid grid-cols-10 gap-4'>

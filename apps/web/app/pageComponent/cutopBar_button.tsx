@@ -1,15 +1,17 @@
 import { Link } from "@remix-run/react";
+import { SVGAttributes } from "react";
 import { useState } from 'react';
 
-function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean}) {
+
+function CUTopBar({ topbarScroll, setThaiLan, thaiLan}:{topbarScroll: boolean, setThaiLan: any, thaiLan: boolean}, props: SVGAttributes<SVGElement>) {
 
     const [isOpen, setIsOpen] = useState(false);
     
     let TBS = null;
     if (topbarScroll) {
-        TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4 bg-gradient-to-b from-cyan-600 to-teal-500 rounded-b-3xl ';
+        TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4 bg-gradient-to-b from-cyan-600 to-turgnoise rounded-b-3xl ';
     } else {
-        TBS = 'fixed  top-0 grid grid-row-2 w-full px-6 py-4';
+        TBS = "fixed  top-0 grid grid-row-2 w-full px-6 py-4 bg-[url('/img_src/bg/hp_bg.png')] bg-cover";
     }
 
     let MyCard = null;
@@ -47,21 +49,6 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
         ApplyCreditCard = 'Apply Credit Card';
     }
 
-    
-    let AboutUs = null;
-    if (thaiLan) {
-        AboutUs = 'เกี่ยวกับเรา';
-    } else {
-        AboutUs = 'About Us';
-    }
-
-    let ContactUs = null;
-    if (thaiLan) {
-        ContactUs = 'ติดต่อเรา';
-    } else {
-        ContactUs = 'Contact Us';
-    }
-
     let Search = null;
     if (thaiLan) {
         Search = 'ค้นหา';
@@ -87,7 +74,7 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                         h-14 w-auto object-cover
                                         lg:h-20 
                                         2xl:h-20" 
-                            src="/img_src/logo/TripleC_logooo.png" 
+                            src="/img_src/logo/TripleC_logoo.png" 
                             alt=""
                         />
                         </div>
@@ -96,44 +83,44 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                         lg:flex justify-end">
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4
-                                            font-sans font-bold text-gray-300 
-                                            text-md sm:text-lg  
-                                            hover:text-gray-100 hover:scale-105 
+                                            text-md font-sans font-bold text-white 
+                                            sm:text-llg 
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {MyCard}
                             </Link>
                             <Link to="/page"
                                 className="mr-4 ml-4 mb-9 rounded-3xl px-4 
-                                            font-sans font-bold text-cyan-700 
-                                            text-md sm:text-lg 
-                                            bg-gray-300 
-                                            hover:bg-gray-100 hover:scale-105 hover:bg-opacity-90 
+                                            text-md font-sans font-bold text-cyan-700 
+                                            sm:text-llg 
+                                            bg-white 
+                                            hover:text-white hover:bg-gray-900 hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {Name}
                             </Link>
                             <button 
                                 className="mb-10 ml-4 px-2
-                                            font-sans font-bold tracking-tight text-gray-300 
-                                            text-md sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105 
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            sm:text-llg
+                                            hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(true)}
                                 >
                                 TH
                             </button>
                             <h1 className="mr-1 ml-1 
-                                            font-sans font-bold tracking-tight text-gray-300 
-                                            text-md sm:text-lg  
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            sm:text-llg 
                                             transition ease-out duration-500">
                                 │
                             </h1>
                             <button 
                                 className="mb-10 mr-12 px-2 
-                                            font-sans font-bold tracking-tight text-gray-300  
-                                            text-md sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105
+                                            text-md font-sans font-bold tracking-tight text-white  
+                                            sm:text-llg 
+                                            hover:scale-105
                                             transition ease-out duration-500"
                                 onClick={() => setThaiLan(false)}
                                 >
@@ -142,40 +129,44 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                         </div>
                     </div>
                     <div className="hidden 
-                                    mt-2
-                                    lg:flex flex-row justify-center xl:gap-32 lg:gap-12">
+                                    lg:flex flex-row justify-center xl:gap-24 lg:gap-10"
+                    >
                             <Link to="/"
-                                className="px-2 py-2
-                                    font-sans font-bold tracking-tight text-gray-300 
-                                    text-md sm:text-lg 
-                                    hover:text-gray-100 hover:scale-105 
-                                    transition ease-out duration-500"
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
+                                            transition ease-out duration-500"
                             >
                                 {Home}
                             </Link>
                             <Link to="/page"
-                                className="px-2 py-2
-                                    font-sans font-bold tracking-tight text-gray-300 
-                                    text-md sm:text-lg 
-                                    hover:text-gray-100 hover:scale-105 
-                                    transition ease-out duration-500"
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
+                                            transition ease-out duration-500"
                             >
                                 {FindyourIdealCard}
                             </Link>
                             <Link to="/page"
-                                className="px-2 py-2
-                                            font-sans font-bold tracking-tight text-gray-300 
-                                            text-md sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105 
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {CompareCreditCard}
                             </Link>
                             <Link to="/page"
-                                className="px-2 py-2 
-                                            font-sans font-bold tracking-tight text-gray-300 
-                                            text-md sm:text-lg 
-                                            hover:text-gray-100 hover:scale-105
+                                className="px-2 
+                                            text-md font-sans font-bold tracking-tight text-white 
+                                            rounded-xl
+                                            sm:text-llg
+                                            hover:bg-white hover:text-turgnoise hover:scale-105
                                             transition ease-out duration-500"
                             >
                                 {ApplyCreditCard}
@@ -195,7 +186,10 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
                                 aria-haspopup="true"
                                 onClick={() => setIsOpen(!isOpen)}
                             >   
-                                &#x2630;
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+
                             </button>
                         </div>
 
@@ -346,4 +340,4 @@ function CuTopBar({ topbarScroll, setThaiLan, thaiLan }:{topbarScroll: boolean, 
         </div>                 
     );
 }
-export default CuTopBar;
+export default CUTopBar;

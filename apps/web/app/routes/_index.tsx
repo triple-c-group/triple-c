@@ -3,13 +3,15 @@ import Bg_blue from "../mainPageComponent/Bg_blue";
 import TopBar from "../mainPageComponent/topBar_button";
 import PhotoCards_scroll from "../mainPageComponent/photoCards_scroll";
 import App_news from "../mainPageComponent/App_news";
-import Search_button from "~/mainPageComponent/Search_button";
-import Search_buttonPop from "~/mainPageComponent/Search_buttonPop";
+import Search_button from "~/im_button/Search_button";
+import Search_buttonPop from "~/im_button/Search_buttonPop";
 import MonthlyPromotion from "~/mainPageComponent/monthly_promo";
 import CompareCardForum from "~/mainPageComponent/compareCard_forum";
 import ApplyHereForum from "~/mainPageComponent/applyHere_forum";
 import BlueMidTab from "~/mainPageComponent/blue_mid_tab";
 import CSlider from "~/mainPageComponent/cslider";
+import ToTopButton from "~/im_button/toTopButton";
+import ChatActivateButton from "~/im_button/chatActivateButton";
 import { useThaiLanState } from "../language_Component/enOrTh";
 import { useState, useEffect } from "react";
 
@@ -57,7 +59,7 @@ export default function Index() {
 
 
   return (
-    <main className="relative bg-gray-200 ">
+    <main className="relative bg-white ">
               <div>
                 <Bg_blue topbarScroll={topbarScroll}/>
               </div>
@@ -74,7 +76,6 @@ export default function Index() {
                   thaiLan={thaiLan}
                   handleContactUs={handleContactUs}
                   handleAboutUs={handleAboutUs}
-                  toTop={toTop}
                 />
               </div>
               <div>
@@ -101,6 +102,15 @@ export default function Index() {
                   searchButton={searchButton}
                   setSearchButton={setSearchButton}
                 />
+              </div>
+              <div>
+                <ToTopButton
+                 toTop={toTop}
+                 topbarScroll={topbarScroll} 
+                 />
+              </div>
+              <div>
+                <ChatActivateButton/>
               </div>
     </main>
   );
