@@ -197,7 +197,7 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
 
     return (
         <div className='flex flex-col mt-4'>
-                <div className='flex flex-col w-full mt-0 mb-4 bg-gray-300 py-6'>
+                <div className='flex flex-col w-full mt-0 mb-4 bg-blue-gray py-6'>
                     <div className='grid grid-cols-12 gap-4'>   
                         <div className='col-start-3 col-end-9 ml-0 mr-auto w-10/12 text-12 font-sans font-bold tracking-tight text-gray-900 sm:text-4xl'>
                             {NewAndArticle}
@@ -221,7 +221,7 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                         </div>
                     </div>  
                 </div>
-                <div className='w-full mt-0 bg-gray-200 py-8'> 
+                <div className='w-full mt-0 bg-white py-8'> 
                     <div className='flex flex-col gap-4 sm:gap-6 lg:gap-10'>
                         <div className='flex flex-row justify-center gap-4 sm:gap-6 lg:gap-10'>
                                 <Link to="https://www.bualuang.co.th/?lg=th"
@@ -264,7 +264,7 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                                 </Link>
                                 <Link to="https://www.scb.co.th/th/personal-banking.html"
                                 >
-                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/scb.png" alt=""/> 
+                                    <img className="object-cover h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 rounded-md sm:rounded-lg lg:rounded-xl xl:rounded-2xl 2xl:rounded-3xl hover:scale-105 transition ease-out duration-500" src="img_src/Bank/Scb.png" alt=""/> 
                                 </Link>
                                 <Link to="https://www.krungsri.com/th/personal"
                                 >
@@ -341,45 +341,45 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                         </div>
                     </div>
                 </div>
-                <div className='w-full mt-0 bg-teal-600 py-8'> 
+                <div className='w-full mt-0 bg-turgnoise py-8'> 
                     <div className='flex flex-col'>
-                        <div className="mt-4 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                        <div className="mt-4 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                             {ContactUs}
                         </div>
                         <div className='flex flex-row mt-1 sm:mt-3'>
                             <img className="ml-5 sm:ml-10 lg:ml-20 w-4 h-5 sm:w-6 sm:h-7 lg:w-8 lg:h-10 mt-0.5 sm:mt-0" src="img_src/Symbol/mail.png"/>
-                            <div className="ml-4 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                            <div className="ml-4 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                                 triple-c-group@googlegroups.com
                             </div>
                         </div>
                         <div className='flex flex-row mt-3 sm:mt-6'>
                             <img className="ml-5 sm:ml-10 lg:ml-20 w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 mt-0.5 sm:mt-0" src="img_src/Symbol/Call.png"/>
-                            <div className="ml-4 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                            <div className="ml-4 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                                 +66&#10088;0&#10089;2-345-6789
                             </div>
                         </div>
                         <div className='flex flex-row mt-3 sm:mt-6'>
                             <img className="ml-5 sm:ml-10 lg:ml-20 w-4 h-6 sm:w-6 sm:h-9 lg:w-8 lg:h-12 mt-0.5 sm:mt-0" src="img_src/Symbol/pin.png"/>
-                            <div className="ml-4 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                            <div className="ml-4 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                                 {address1}
                             </div>
                         </div>
-                        <div className="mt-0 ml-14 sm:ml-20 lg:ml-32 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                        <div className="mt-0 ml-14 sm:ml-20 lg:ml-32 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                             {address2}
                         </div>
                         <div className='flex flex-row justify-end mr-8 lg:mr-20 gap-4 sm:gap-6 lg:gap-10 '>
-                            <div className="mt-6 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                            <div className="mt-6 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                                 {PrivatePolicy}
                             </div>
-                            <div className="mt-6 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-gray-300 sm:text-lg lg:text-2xl">
+                            <div className="mt-6 ml-5 sm:ml-10 lg:ml-20 text-xs font-sans tracking-tight text-white text-md sm:text-lg lg:text-2xl">
                                 {CookiePolicy}
                             </div>                            
                         </div>
                     </div>
                     <div className='flex justify-center mt-4 sm:mt-6 lg:mt-8'>
-                        <div className='w-11/12 h-1 bg-gray-300 rounded-xl'/>
+                        <div className='w-11/12 h-1 bg-white rounded-xl'/>
                     </div>
-                    <h1 className='mt-4 ml-5 sm:ml-10 lg:ml-20 sm:text-2xl text-gray-300'>Triple C</h1>
+                    <h1 className='mt-4 ml-5 sm:ml-10 lg:ml-20 sm:text-2xl text-white'>Triple C</h1>
                 </div>
         </div>
     );

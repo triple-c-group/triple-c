@@ -16,9 +16,9 @@ export default function BlueMidTab({thaiLan}:{thaiLan: boolean}) {
 
 
     return (
-        <div className='w-full mt-0 bg-gradient-to-l from-sky-700 to-teal-600 py-8'> 
-            <h1 className='flex justify-center font-bold text-gray-300 text-xss sm:text-xs md:text-sm lg:text-xl xl:text-2xl'>{Advertisenewcardpromotion1}</h1>
-            <h1 className='flex justify-center font-bold text-gray-300 text-xss sm:text-xs md:text-sm lg:text-xl xl:text-2xl'>{Advertisenewcardpromotion2}</h1>
+        <div className='w-full mt-0 bg-gradient-to-l from-sky-700 to-turgnoise py-8'> 
+            <h1 className='flex justify-center font-bold text-white text-xxss sm:text-xs md:text-sm lg:text-xl xl:text-2xl'>{Advertisenewcardpromotion1}</h1>
+            <h1 className='flex justify-center font-bold text-white text-xxss sm:text-xs md:text-sm lg:text-xl xl:text-2xl'>{Advertisenewcardpromotion2}</h1>
         </div>
     );
 }
