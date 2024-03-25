@@ -17,7 +17,7 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Tripple C" },
+    { title: "Triple C" },
   ];
 };
 
