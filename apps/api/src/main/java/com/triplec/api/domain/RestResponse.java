@@ -6,8 +6,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RestResponse {
-    private Boolean success;
-
-    private Object data;
+public class RestResponse<T> {
+    private T data;
 }
