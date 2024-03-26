@@ -1,0 +1,804 @@
+[
+  {
+    "id": 30,
+    "name": "Bangkok Bank - Visa Platinum Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Bangkok Bank - Titanium Ramathibodi Hospital Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Bangkok Bank -  Visa Platinum Toyota Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Bangkok Bank - Titanium Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Bangkok Bank - AirAsia",
+    "lifestyles": [
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Bangkok Bank -  UnionPay Platinum Credit Card",
+    "lifestyles": [
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "UOB Lady's Platinum Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "UOB Lady's Solitaire Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "UOB Preferred Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "UOB Premier Credit Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "UOB PRIVI Miles",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "CardX FAMILY PLUS",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "CardX BEYOND",
+    "lifestyles": [
+      {
+        "id": 6,
+        "name": "Exclusive"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "CardX ULTRA PLATINUM",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "UOB Lazada",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "CardX UP2ME",
+    "lifestyles": [
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "KTC - Agoda Platinum Mastercard",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "KTC - Agoda World Rewards Mastercard",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "KTC JCB ULTIMATE ",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "KTC VISA PLATINUM",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "KTC X - Agoda World Rewards Mastercard",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "ttb so fast",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "ttb so chill",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Citi Simplicity Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "AMEX - Platinum Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Bangkok Bank -  Visa Platinum Travel",
+    "lifestyles": [
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Bangkok Bank -  Mastercard Platinum Travel",
+    "lifestyles": [
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "UOB Yolo Platinum Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "UOB Makro",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "UOB Grab",
+    "lifestyles": [
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Citi Cash Back Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Citi Premier Credit Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "KTC - DIGITAL PLATINUM MASTERCARD",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "KTC - DIGITAL PLATINUM VISA",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "KTC - BANGCHAK VISA PLATINUM",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "KTC VISA PLATINUM",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "TMRW credit card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Citi Mercedes Credit Card",
+    "lifestyles": [
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Citi Rewards Credit Card",
+    "lifestyles": [
+      {
+        "id": 1,
+        "name": "First Jobber"
+      },
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Citi Royal Orchid Plus Select Mastercard Credit Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Citi Prestige Credit Card",
+    "lifestyles": [
+      {
+        "id": 2,
+        "name": "Shopping"
+      },
+      {
+        "id": 3,
+        "name": "Health & Fitness"
+      },
+      {
+        "id": 4,
+        "name": "foodie"
+      },
+      {
+        "id": 5,
+        "name": "Travel/Commute"
+      },
+      {
+        "id": 6,
+        "name": "Exclusive"
+      }
+    ]
+  }
+]
