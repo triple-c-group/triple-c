@@ -142,11 +142,11 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
         Sirapob = "Sirapob Pratipnatsiri";
     }
 
-    let Jiremeth = null;
+    let Jirameth = null;
     if (thaiLan) {
-        Jiremeth = 'จิรเมธ สีตะเสถียร';
+        Jirameth = 'จิรเมธ สีตะเสถียร';
     } else {
-        Jiremeth = "Jiremeth Sitasathein";
+        Jirameth = "Jirameth Sitasathein";
     }
 
     let Chanakan = null;
@@ -324,7 +324,7 @@ export default function App_news({thaiLan}:{thaiLan: boolean}) {
                                 {FE}
                             </strong>
                             <p>{Sirapob}</p>
-                            <p>{Jiremeth}</p>
+                            <p>{Jirameth}</p>
                             <p>{Chanakan}</p>
                             <strong className="mt-2 sm:mt-4 lg:mt-6">
                                 {BE}
