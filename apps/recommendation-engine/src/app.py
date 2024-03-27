@@ -8,7 +8,7 @@ from flask import jsonify
 import urllib
 
 with open(
-    "./src/SampleData/lifestyles.json"
+    "./SampleData/lifestyles.json"
 ) as creditcard:
 
     data = json.load(creditcard)
@@ -26,14 +26,14 @@ for i in CreditList:
 LifeStyle = sorted(TempLf, key=lambda x: x["id"])
 CardLifeMat = tf.constant(CardtoLife, dtype=tf.float32)
 with open(
-    "./src/SampleData/SampleRating.json"
+    "./SampleData/SampleRating.json"
 ) as rating:
     rdata = json.load(rating)
 rdf = pd.json_normalize(rdata)
 RatingList = rdf.values.tolist()
 UserRating = [[l["Rating"] for l in i[1]] for i in RatingList]
 with open(
-    "./src/SampleData/SampleRanking.json"
+    "./SampleData/SampleRanking.json"
 ) as Ranking:
     GotRanking = json.load(Ranking)
 df = pd.json_normalize(GotRanking)
@@ -69,7 +69,7 @@ def jsonid():
 
 def GetRanking(id: str, amount: int):
     with open(
-        r"triple-c/apps/recommendation-engine/src/SampleData/SampleRanking.json"
+        r"./SampleData/SampleRanking.json"
     ) as Ranking:
         GotRanking = json.load(Ranking)
     df = pd.json_normalize(GotRanking)
