@@ -19,11 +19,11 @@ public class CreditCardService {
 
     public List<CreditCardDto> recommend(
             Optional<Integer> salary,
-            Optional<List<Integer>> bankIds,
+            Optional<List<String>> bankIds,
             Optional<List<Integer>> lifestyleIds,
-            Optional<List<Integer>> networkIds,
+            Optional<List<String>> networks,
             Optional<Integer> userId
     ){
-        return null;
+        return creditCardMapper.entitiesToDtos(creditCardRepository.filterByQueries(salary, bankIds, lifestyleIds, networks));
     }
 }

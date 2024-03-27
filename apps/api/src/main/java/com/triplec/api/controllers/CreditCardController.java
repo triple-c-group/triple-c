@@ -19,11 +19,11 @@ public class CreditCardController {
     @GetMapping(path = "/credit-cards")
     public RestResponse<List<CreditCardDto>> recommendCards(
             @RequestParam Optional<Integer> salary,
-            @RequestParam Optional<List<Integer>> bankIds,
+            @RequestParam Optional<List<String>> bankIds,
             @RequestParam Optional<List<Integer>> lifestyleIds,
-            @RequestParam Optional<List<Integer>> networkIds,
+            @RequestParam Optional<List<String>> networks,
             @RequestParam Optional<Integer> userId
     ){
-        return new RestResponse<>(creditCardService.recommend(salary, bankIds, lifestyleIds, networkIds, userId));
+        return new RestResponse<>(creditCardService.recommend(salary, bankIds, lifestyleIds, networks, userId));
     }
 }

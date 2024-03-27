@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CreditCardRepositoryCustom {
-    List<CreditCardEntity> filterByQuerys(
+    List<CreditCardEntity> filterByQueries(
             Optional<Integer> salary,
-            Optional<List<Integer>> bankIds,
+            Optional<List<String>> bankIds,
             Optional<List<Integer>> lifestyleIds,
-            Optional<List<Integer>> networkIds,
-            Optional<Integer> userId
+            Optional<List<String>> networks
     );
 }
